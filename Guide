@@ -1,16 +1,130 @@
-https://chatgpt.com/share/69358b2a-fdfc-8001-9b09-1db575050077
+    How to download Git in Windows & WSL ?
 
-https://www.youtube.com/watch?v=rH3zE7VlIMs&t=6860s
-Notes 
+      -  https://chatgpt.com/share/69358b2a-fdfc-8001-9b09-1db575050077
 
+         https://www.youtube.com/watch?v=rH3zE7VlIMs&t=6860s
 
-
-
-
-
-
-
+    How to Download GitHub CLI in windows ?
 -----------------------------------------------------------------------------------------------
- * Also look at conversion of SSH - PAT!
+  * PHASE 0 — Prerequisites (must already exist)
 
- * Learn about Practice Rule set from work flow repo
+    Before gh, you must already have:
+
+    Git installed
+
+    git --version
+
+
+    A GitHub account
+
+    Basic Git config done
+
+    git config --global user.name
+    git config --global user.email
+
+
+    If Git itself is not configured, gh is useless.
+
+    PHASE 1 — Install GitHub CLI (gh)
+
+    What installation will do:
+
+    Add gh binary to your system
+
+    Make gh command available in terminal
+
+    After install, you should be able to run:
+
+    gh --version
+
+
+    ⚠️ Installation does NOT:
+
+    log you in
+
+    link repos
+
+    change Git behavior
+
+    PHASE 2 — Authentication (MOST IMPORTANT)
+
+    After install, you must authenticate.
+
+    This step:
+
+    Links your terminal to your GitHub account
+
+    Stores credentials securely
+
+    Allows gh to act on your behalf
+
+    Command (later):
+
+    gh auth login
+
+
+    You will choose:
+
+    GitHub.com
+
+    HTTPS or SSH
+
+    Browser-based login (recommended)
+
+    PHASE 3 — Verification & config
+
+    After login, we verify:
+
+    Auth status
+
+    gh auth status
+
+
+    GitHub user
+
+    gh api user
+
+
+    Default repo protocol
+
+    gh config get git_protocol
+
+
+    Optional configs:
+
+    editor
+
+    browser
+
+    default repo visibility
+
+    PHASE 4 — Basic daily commands (after setup)
+
+    Only after everything above works, we start using:
+
+    Repo
+    gh repo clone
+    gh repo view
+
+    Pull Requests
+    gh pr create
+    gh pr list
+    gh pr checkout
+
+    Issues
+    gh issue create
+    gh issue list
+
+
+    ⚠️ None of these will work without Phase 2.
+
+    Key mental separation (non-negotiable)
+    Tool	Responsibility
+    git	commits, branches, history
+    gh	PRs, issues, GitHub UI actions
+
+    gh does not replace Git.
+
+
+
+  * Learn about Practice Rule set from work flow repo

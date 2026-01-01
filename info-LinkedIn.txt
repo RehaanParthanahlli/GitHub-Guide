@@ -1,2 +1,11 @@
+How to install Git in Windows & WSL ?
+
 1st Explain about the WSL n Go in WSL n BootDev CLI workflow then explain all the issues resolved eg DNS & So on.
 Then tell how I learnt Vim CLI
+
+https://www.youtube.com/watch?v=rH3zE7VlIMs&t=6860s Follow these to install Git in WSL & Install Git in Windows 
+https://www.boot.dev/courses/learn-git-2
+https://www.boot.dev/lessons/c465d09d-b53a-4276-978c-cc2c9f4e02ad
+
+Later download GitHub CLI for windows & WSL ?
+
